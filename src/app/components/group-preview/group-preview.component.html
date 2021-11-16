@@ -1,0 +1,17 @@
+<ng-container *ngIf="group">
+    <span>
+        Name: {{group.name}}
+    </span>
+    <span>
+        Amount: {{group.amount}}
+    </span>
+    <span *ngIf="group.mandats">
+        Mandats: {{group.mandats}}
+    </span>
+
+    <button (click)="deleteMe.emit()"
+        *ngIf="!group.mandats">
+        <img src="https://freesvg.org/img/trash.png"
+            alt="Delete Me">
+    </button>
+</ng-container>

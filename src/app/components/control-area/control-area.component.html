@@ -1,0 +1,18 @@
+<ng-container *ngIf="data">
+    <hr>
+
+    Current percent is: {{data.percent}}
+    <br>
+    Change here:
+    <input type="number"
+        [(ngModel)]="data.percent" />
+
+    <hr>
+    Current seats is: {{data.seats}}
+    <br>
+    Change here:
+    <input type="number"
+        [(ngModel)]="data.seats" />
+
+    <hr>
+</ng-container>

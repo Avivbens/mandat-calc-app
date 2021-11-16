@@ -1,0 +1,5 @@
+<ng-container *ngIf="groups">
+    <app-group-preview *ngFor="let group of groups; let index=index"
+        (deleteMe)="deleteGroup.emit(index)"
+        [group]="group"></app-group-preview>
+</ng-container>

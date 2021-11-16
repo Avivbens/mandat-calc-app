@@ -1,0 +1,19 @@
+<h3>Add new group</h3>
+
+<form (ngSubmit)="addGroup(form)"
+    #form="ngForm">
+
+    <input type="text"
+        ngModel
+        name="name" />
+
+    <input type="number"
+        ngModel
+        name="amount" />
+
+    <button type="submit">Add</button>
+</form>
+
+<button (click)="this.clear.emit()">
+    Clear History!
+</button>
