@@ -1,6 +1,7 @@
 {
   "name": "mandat-calc-app",
   "version": "0.0.0",
+  "homepage": "https://avivbens.github.io/mandat-calc-app/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
