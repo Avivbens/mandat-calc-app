@@ -11,7 +11,7 @@ export class AppComponent {
 
     public data = {
         groups: [],
-        percent: 2,
+        percent: 0.75,
         seats: 5
     } as {
         groups: Group[],
