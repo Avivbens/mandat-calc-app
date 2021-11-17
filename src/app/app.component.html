@@ -1,13 +1,13 @@
-<app-group-list [groups]="data.groups"
+<app-group-list [groups]="data.groups | sort:'amount':'top'"
     (deleteGroup)="deleteGroup($event)"></app-group-list>
 
 <app-control-area [data]="data"></app-control-area>
 
-<span>
-    {{passedNumber | number}} - Minimum amount for pass
+<div>
+    Minimum amount for pass - {{passedNumber | number}} - מספר קולות מינימאלי למעבר ראשוני
     <br>
-    {{newPassedNumber | number}} - New minimum amount for pass
-</span>
+    New minimum amount for pass - {{newPassedNumber | number}} - מספר קולות מינימאלי למעבר אחרי ניפוי אחוז חסימה
+</div>
 
 <hr>
 

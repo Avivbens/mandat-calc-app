@@ -1,0 +1,21 @@
+:host {
+    > form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+
+        margin-bottom: 40px;
+    }
+
+    button {
+        padding: 6px;
+        border-radius: 3px;
+        border: none;
+        background-color: var(--main-color);
+
+        &:hover {
+            background-color: var(--hover-color);
+        }
+    }
+}

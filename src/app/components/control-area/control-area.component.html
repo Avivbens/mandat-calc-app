@@ -1,18 +1,22 @@
 <ng-container *ngIf="data">
     <hr>
-
-    Current percent is: {{data.percent}}
-    <br>
-    Change here:
-    <input type="number"
-        [(ngModel)]="data.percent" />
+    <div class="percent">
+        Current percent is: {{data.percent}} אחוז חסימה נוכחי
+        <br>
+        Change here:
+        <input type="number"
+            [(ngModel)]="data.percent" />
+    </div>
 
     <hr>
-    Current seats is: {{data.seats}}
-    <br>
-    Change here:
-    <input type="number"
-        [(ngModel)]="data.seats" />
+
+    <div class="seats">
+        Current seats is: {{data.seats}} מספר מושבים נוכחי
+        <br>
+        Change here:
+        <input type="number"
+            [(ngModel)]="data.seats" />
+    </div>
 
     <hr>
 </ng-container>

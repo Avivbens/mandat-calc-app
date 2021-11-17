@@ -1,12 +1,12 @@
 <ng-container *ngIf="group">
     <span>
-        Name: {{group.name}}
+        Name: {{group.name}} שם
     </span>
     <span>
-        Amount: {{group.amount}}
+        Amount: {{group.amount}} מספר קולות
     </span>
     <span *ngIf="group.mandats">
-        Mandats: {{group.mandats}}
+        Mandats: {{group.mandats}} מנדטים
     </span>
 
     <button (click)="deleteMe.emit()"

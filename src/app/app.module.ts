@@ -6,7 +6,8 @@ import { GroupPreviewComponent } from './components/group-preview/group-preview.
 import { GroupListComponent } from './components/group-list/group-list.component'
 import { FormsModule } from '@angular/forms';
 import { ControlAreaComponent } from './components/control-area/control-area.component';
-import { AddGroupFormComponent } from './components/add-group-form/add-group-form.component'
+import { AddGroupFormComponent } from './components/add-group-form/add-group-form.component';
+import { SortPipe } from './pipes/sort.pipe'
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import { AddGroupFormComponent } from './components/add-group-form/add-group-for
         GroupListComponent,
         ControlAreaComponent,
         AddGroupFormComponent,
+        SortPipe,
     ],
     imports: [
         BrowserModule,

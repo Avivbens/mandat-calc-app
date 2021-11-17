@@ -6,7 +6,7 @@
     min-width: 180px;
     padding: 8px;
 
-    background-color: lightgrey;
+    background-color: var(--main-color);
     border-radius: 3px;
 
     > button {
@@ -15,8 +15,13 @@
         width: 40px;
         height: 40px;
         border-radius: 3px;
-        cursor: pointer;
         align-self: flex-end;
+        background-color: transparent;
+        transition: all 0.1s;
+
+        &:hover {
+            box-shadow: 2px 2px 3px 0px #000000a1;
+        }
 
         > img {
             width: 100%;
